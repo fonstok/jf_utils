@@ -1,6 +1,6 @@
 // This creates a lock variable and will set it to false for a passed amount of time
 // const sl = new locker(600);
-// sl.lock = true // result in 600 ms sl.lock will be set to false
+// sl.lock() // result sl.locked is set to true and in 600 ms sl.lock will be reset to false
 /*
 if (sl.locked === false) {
   sl.lock(); // lock variable the class has set sl.locked to true;
