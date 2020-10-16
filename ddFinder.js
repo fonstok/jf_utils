@@ -1,6 +1,6 @@
 // this will tell you whether a number is moving in a - or + direction
 // on animation or update the class can be passed a variable and it will return a 1 or -1
-// helpful if you say need to know what direction a mouse is moving
+// helpful if say you need to know what direction a mouse or animated object is moving
 /*
 const dirX = new ddFinder(); // creates a new ddFinder
 dirX.update(variable) // needs to be called on iteration // returns a 1 or -1;
