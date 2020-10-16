@@ -56,7 +56,7 @@ const ce = function (_tag, _opts = {}) {
 		newElement.innerHTML = _opts._html;
 	}
 	if (_opts._class != undefined) {
-		// can add 1 class attribute as an object, or multiples as an array
+		// can add 1 class attribute as an object, or multiple objects as an array
 		if (Array.isArray(_opts._class)) {
 			_opts._class.forEach((className) => {
 				newElement.classList.add(className);
@@ -69,7 +69,7 @@ const ce = function (_tag, _opts = {}) {
 		newElement.id = _opts._id;
 	}
 	if (_opts._data != undefined) {
-		// can add 1 data attribute as an object, or multiples as an array
+		// can add 1 data attribute as an object, or multiple objects as an array
 		if (Array.isArray(_opts._data)) {
 			_opts._data.forEach((element) => {
 				let data_name = "data-" + element._name;
