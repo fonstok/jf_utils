@@ -3,11 +3,9 @@
 // sl.lock = true // result in 600 ms sl.lock will be set to false
 /*
 if (sl.locked === false) {
-  // lock variable
-  sl.lock();
-  // locked and the class has set it sl.locked to true;
+  sl.lock(); // lock variable the class has set sl.locked to true;
 	} else {
-		// unlocked and the class has set it sl.locked to false;
+		// unlocked the class will set sl.locked to false after 600 ms;
  }
  sl.unlock()// will unlock the sl.locked at anytime.
 //*/
