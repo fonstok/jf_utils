@@ -1,4 +1,4 @@
-// this will tell you whether a number is moving in a - or + direction
+// This will tell you whether a number is moving in a - or + direction
 // on animation or update the class can be passed a variable and it will return a 1 or -1
 // helpful if say you need to know what direction a mouse or animated object is moving
 /*

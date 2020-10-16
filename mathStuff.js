@@ -35,9 +35,9 @@ const isEven = function (_num) {
 		return false;
 	}
 }
-// Remap a number in a current range of numbers to a differnt range of numbers;
-// Example: 20 in a range of 1 - 20 is 20, but 20 compared to a new range of 50 - 100 is 100
-// helpful when translating objects to a diffrent scope that don't start at 0
+// Remap a number in a current range of numbers to a different range of numbers;
+// Example: 20 in a range of 1 - 20 is 20, but 20 remapped to a different range of 50 - 100 is 100
+// helpful when translating objects to a different scope that don't start at 0
 // console.log(remap(20, 1, 20, 50, 100));
 const remap = function (number, oMin, oMax, nMin, nMax, round) {
 	if (round == undefined) {
