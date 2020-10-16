@@ -1,21 +1,3 @@
-/*
-	// === options
-	 {
-		 // append to element, can be a string or selected 
-		 _append: "body",
-		 // html to include in new element object;
-		_html: "<h1>Bong</h1>",
-		// can add 1 class attribute as a string, or multiples as an array 
-		_class: "test",
-		_class: ["test", "best"],
-		_id: "T-dog",
-		// can add 1 data attribute as an object, or multiples as an array 
-		_data: { _name: "test", _value: "test" },
-		_data: [{ _name: "test", _value: "test" }],
- } 
- */
- 
-// ========== get an element
 const ge = function (_elm) {
 	let el = document.querySelector(_elm);
 	return el;
@@ -40,6 +22,24 @@ const gRct = function (_obj) {
 };
 
 // ========== create element
+/*
+$newDiv.ce("div", {_append:"body", _id:"sam", _class:"box", _html:"<h2>Bro!</h2>"});
+	// === options
+	 {
+		 // append to element, can be a string or selected 
+		 _append: "body",
+		 // html to include in new element object;
+		_html: "<h1>Bong</h1>",
+		// can add 1 class attribute as a string, or multiples as an array 
+		_class: "test",
+		_class: ["test", "best"],
+		_id: "T-dog",
+		// can add 1 data attribute as an object, or multiples as an array 
+		_data: { _name: "test", _value: "test" },
+		_data: [{ _name: "test", _value: "test" }],
+ } 
+//*/
+// ========== get an element
 const ce = function (_tag, _opts = {}) {
 	let newElement = document.createElement(_tag);
 
