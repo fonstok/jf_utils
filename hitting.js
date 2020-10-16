@@ -1,3 +1,15 @@
+// pass this two selected objects and it will return a data object with the following information 
+/*
+hitting(object1, object2) // returns a data object with the following information
+{
+  left:false, // are the left sides crossing?
+  right:false, // are the right sides crossing?
+  top:false, // are the top sides crossing?
+  bottom:false, // are the bottom sides crossing?
+  hit:false // are the corners of the objects crossing?
+ }    
+//*/
+
 function hitting(_ob1, _ob2){
     let _rect1 = _ob1.getBoundingClientRect();
     let _rect2 =  _ob2.getBoundingClientRect();
