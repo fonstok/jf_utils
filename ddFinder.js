@@ -12,7 +12,7 @@ class ddFinder {
     this.current = 0;
     this.distance = 0;
     this.direction = 0;
-    this.arrayLimit = 3;
+    this.arrayLimit = 10;
   }
   update(_val) {
     const me = this;
@@ -27,6 +27,6 @@ class ddFinder {
     } else if (me.old < me.current) {
       me.direction = 1;
     }
-    me.distance = me.current - me.old;
+    me.distance = Math.abs(me.current - me.old);
   }
 }

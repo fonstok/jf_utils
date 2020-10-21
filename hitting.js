@@ -10,17 +10,18 @@ hitting(object1, object2) // returns a data object with the following informatio
  }    
 //*/
 
-function hitting(_ob1, _ob2){
+let touchData = {
+ left:false,
+ right:false,
+ top:false,
+ bottom:false, 
+ hit:false
+}
+
+const hitting = function(_ob1, _ob2){
     let _rect1 = _ob1.getBoundingClientRect();
     let _rect2 =  _ob2.getBoundingClientRect();
-
-    let touchData = {
-      left:false,
-      right:false,
-      top:false,
-      bottom:false, 
-      hit:false
-    }
+    
     if (_rect1.x > _rect2.x && _rect1.x < _rect2.right) {
       touchData.left = true;
     } else {
@@ -45,7 +46,7 @@ function hitting(_ob1, _ob2){
       //console.log("hitting");
       touchData.hit = true;
     } else {
-      //console.log("not");
+      //console.log("not hitting");
       touchData.hit = false;
     }
     //console.log(touchData);
